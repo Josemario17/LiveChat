@@ -1,0 +1,40 @@
+
+/*Efeitos de scrool*/
+
+/* Para Medias menores*/
+@media (max-width: 1100px) {
+    #all-cards{
+        animation-duration: 4.5s;
+        animation-name: calltop;
+    }
+    
+    @keyframes calltop {
+        from{
+            margin-top: 80%;
+            opacity: 45%;
+        }
+    
+        to{
+            margin-top: 1%;
+            opacity: 100%;
+        }
+        
+    }
+}
+
+#all-cards{
+    animation-duration: 2.5s;
+    animation-name: calltop;
+}
+
+@keyframes calltop {
+    from{
+        margin-top: 68%;
+        opacity: 45%;
+    }
+
+    to{
+        margin-top: 1%;
+        opacity: 100%;
+    }
+}

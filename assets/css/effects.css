@@ -1,0 +1,143 @@
+/*Efeitos para o livechat*/
+body *{
+    transition: 1s;
+}
+
+a:hover, button:hover{
+    transition: .4s;
+}
+
+.btn-options:hover{
+    transform: scale(1.3);
+    transition: .2s;
+}
+
+.link-right:hover{
+    transition: .1s;
+    color: rgb(66, 63, 63);
+}
+
+.link-right i{
+    transition: .1s;
+}
+
+.btn-top:hover{
+    transform: scale(1.3);
+}
+
+.social-link-gr button:hover, .social-link-gr i:hover{
+    color: rgb(66, 63, 63);
+}
+
+.access-point a:hover{
+    background-color: #a17fa1;
+    color: aliceblue;
+}
+
+.card-comm:hover{
+    transition: .4s;
+    background-color: rgb(66, 63, 63);
+    color: aliceblue;
+}
+
+.card-comm:hover *{
+    transition: .1s;
+}
+
+.card-comm *{
+    transition: .1s;
+}
+
+.area-to-see-more a:hover{
+    background-color: #a17fa1;
+}
+
+.icon-side-right i{
+    animation-name: rotation;
+    animation-duration: 3.50s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+    from{
+        color: initial;
+        transform: rotate(1deg);
+    }
+
+    to{
+        color: #a17fa1;
+        transform: rotate(360deg);
+    }
+}
+
+
+#btn-to-close:hover{
+    transform: scale(1.2);
+}
+
+footer div a:hover i{
+    transition: .21s;
+    transform: scale(1.2);
+    color: aliceblue;
+}
+
+.scre-links a:hover{
+    color: rgb(66, 63, 63);
+    border-bottom: 1px solid rgb(66, 63, 63);
+}
+
+.bg-a:hover{
+    background-color: aliceblue;
+    color: #7c637c;
+}
+
+.brder-a:hover{
+    background-color: #7c637c;
+    color: aliceblue;
+}
+
+#btn-to-up:hover{
+    background-color: rgb(66, 63, 63);
+}
+
+
+#hidden-check-inpt{
+    display: none;
+}
+
+#hidden-check-inpt:checked ~ label .menu-floating-md-tp{ 
+    transform: rotate(49deg);
+}
+
+#hidden-check-inpt:checked ~ label .icone-sp-eff-sp::before{
+    transform: rotate(90deg);
+    top: 0px
+}
+
+#hidden-check-inpt:checked ~ label .icone-sp-eff-sp::after{
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+#hidden-check-inpt:checked ~ #min-options-chat{
+    display: grid;   
+     animation-duration: 1s;
+    animation-name: aparecer;
+}
+
+
+@keyframes aparecer {
+    from{
+        right: 0px;
+        opacity: 25%;
+    }
+
+    to{
+        opacity: 100%;
+    }
+}
+
+
+#btnPost:hover{
+    background-color: rgb(66, 63, 63);
+}

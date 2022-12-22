@@ -1,0 +1,13 @@
+/*Responsividade da altura*/
+
+footer{
+    top: 90%;
+}
+
+.flex-items a i{
+    font-size: larger;
+}
+
+.flex-items{
+    align-content: center;
+}

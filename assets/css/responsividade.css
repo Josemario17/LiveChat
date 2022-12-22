@@ -1,0 +1,108 @@
+/*Responsividade da largura*/
+
+.high-text h1{
+    font-size: large;
+}
+
+#btn{
+    font-size: larger;
+}
+
+.container section 
+{
+    place-content: center;
+    place-items: center;
+    float:inline-start;
+    display: grid;
+    margin-bottom: 40px;
+}
+
+.container section *{
+    width: 100%;
+}
+
+.c1{
+    display: grid;
+    row-gap: 35px;
+}
+
+.card-comm{
+    width: 100%;
+    height: 100%;;
+}
+
+.card-comm-3{
+    width: 100%;
+    height: 100%;
+}
+
+.shadow{
+    width: 100%;
+    margin-top: -125px;
+}
+
+.scrembum{
+    width: 100%;
+    height: 190px;
+    display: grid;
+    justify-content: center;
+}
+
+.scrembum *{
+    width: 100%;
+}
+
+.main-grid{
+    display: grid;
+    gap: 5%;
+    margin-bottom: 50%;
+}
+
+.main-grid *{
+    width: 100%;
+}
+
+.hidden-open{
+    width: 70%;
+}
+
+#content-end{
+    display: grid;
+    gap: 25px;
+}
+
+.end-tip{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.end-tip *{
+    margin: 2% auto;
+}
+
+.container-float{
+    width: 100%;
+    display: grid;
+}
+
+.container-float aside section{
+    width: 100%;
+}
+
+.container-float .profile-card{
+    width: 100%;
+}
+
+.container-float #card{
+    width: 230px;
+}
+
+#sectionPost{
+    margin-top: 12%;
+    width: 65%;
+}
+
+.post-h{
+    width: 100%;
+}

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiveChat - RealTime</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/pops.css">
+    <link rel="stylesheet" href="assets/css/pre-load-chat.css" id="colett">
+    <!-- Os icones do app -->
+    <link rel="stylesheet" href="assets/icons/fontawesome-free-6.2.0-web/css/all.min.css">
+</head>
+<body id="root-to-preload">
+    <div class="container-all-flex" id="chat-step-2">  
+        <header class="header-in-tp">
+            <nav>
+                <div class="text-tip-logo">
+                    <h1><i class="fa-solid fa-comment"></i> Chat</h1>
+                </div>
+                <div class="table-options">
+                    <a href="index.html" class="btn-table-options"><i class="fa-solid fa-house"></i></a>
+                    <a href="" class="btn-table-options"><i class="fa-solid fa-user-group"></i></a>
+                    <a href="#" class="btn-table-options"><i class="fa-solid fa-envelope-open"></i></a>
+                    <a href="" class="btn-table-options"><i class="fa-solid fa-share-from-square"></i></a>
+                    <a href="profiles.html" class="btn-table-options"><i><i class="fa-solid fa-circle-user"></i></i></a>
+                </div>
+            </nav>
+        </header>
+
+        <div class="div-area-to-describe">
+            <div class="frst-content-to-describe">
+                <div class="text-1-md">
+                    <h2>Mensagens</h2>
+                    <div class="n-m-group">+1</div>
+                </div> 
+                
+                <div class="area-to-sr">
+                    <button id="btn-to-call-sr"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+
+            <div class="search-md-box" id="md-box">
+                <input type="search" placeholder="pesquisar aqui..." name="go-to-search" onkeyup="goAndTake()"  id="inptforGo">
+                <div class="looking-for-result">
+                    <div class="matches">
+                        <i class="fa-solid fa-magnifying-glass"></i><span> <span id="matches-number">0</span> aparições</span>
+                    </div>
+                    <div class="w-send">
+                        <button id="open-send"><i class="fa-sharp fa-solid fa-paper-plane"></i>  Enviados</button>
+                    </div>
+                    <div class="w-recive">
+                        <button id="open-recive"><i class="fa-solid fa-envelope-open"></i> Recebidas -  <span id="recive-number"></span></button>
+                    </div>          
+                </div>
+
+            </div> 
+          
+            <div class="scnd-content-to-describe">
+                <div id="btn-group">
+                    <button id="btn-group-md">Todas conversas</button>
+                    <button id="btn-group-md">Arquivadas</button>
+                    <button id="btn-group-md">marcadas</button>
+                </div>
+            </div>
+
+            <section class="content-for-friends">
+                 <div class="contant-f-f-1" id="cff">
+                    <h2>Amigos</h2>
+                    <div class="area-to-all-frinds-dscb">
+                        <button class="unknow">
+                            <div class="indetify-card-apply">
+                                <img src="assets/img/image1.jfif" alt="primeiro amigo" >
+                            </div>
+        
+                            <div class="about-conversation">
+                                <h3>Josy Dos Santos</h3>
+                                <span class="message-latest" id="message-latest">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                <span id="message-time">Enviada há <span id="timeCount"></span> minutos</span>
+                            </div>
+                        </button>
+                </div>
+               
+                    <div class="atlf-2">
+                        <button class="unknow">
+                            <div class="indetify-card-apply">
+                                <img src="assets/img/image1.jfif" alt="primeiro amigo" >
+                            </div>
+
+                            <div class="about-conversation">
+                                <h3>Josy Dos Santos</h3>
+                                <span class="message-latest" id="message-latest">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                <span id="message-time">Enviada há <span id="timeCount"></span> minutos</span>
+                            </div>
+                        </button>
+                    </div>
+                
+                    <div class="atlf-2">
+                        <button class="unknow">
+                            <div class="indetify-card-apply">
+                                <img src="assets/img/image1.jfif" alt="primeiro amigo" >
+                            </div>
+
+                            <div class="about-conversation">
+                                <h3>Josy Dos Santos</h3>
+                                <span class="message-latest" id="message-latest">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                <span id="message-time">Enviada há <span id="timeCount"></span> minutos</span>
+                            </div>
+                        </button>
+                </div>
+            
+
+                <div class="atlf-2">
+                    <button class="unknow">
+                        <div class="indetify-card-apply">
+                            <img src="assets/img/image1.jfif" alt="primeiro amigo" >
+                        </div>
+
+                        <div class="about-conversation">
+                            <h3>Josy Dos Santos</h3>
+                            <span class="message-latest" id="message-latest">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                            <span id="message-time">Enviada há <span id="timeCount"></span> minutos</span>
+                        </div>
+                    </button>
+                </div>
+                 </div>
+
+                    <!-- message as arquived -->
+                    <div class="contant-f-f-2" id="cff">
+                        <h2>Arquivados</h2>
+                        <div class="atlf-2">
+                            <button class="unknow">
+                                <div class="indetify-card-apply">
+                                    <img src="assets/img/image1.jfif" alt="primeiro amigo" >
+                                </div>
+    
+                                <div class="about-conversation">
+                                    <h3>Josy Dos Santos</h3>
+                                    <span class="message-latest">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                    <span id="message-time">Enviada há <span id="timeCount"></span> minutos</span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- messages as mark -->
+                    <div class="contant-f-f-3" id="cff">
+                        <h2>Marcadas</h2>
+                        <div class="atlf-2">
+                            <button class="unknow">
+                                <div class="indetify-card-apply">
+                                    <img src="assets/img/image1.jfif" alt="primeiro amigo" >
+                                </div>
+    
+                                <div class="about-conversation">
+                                    <h3>Josy Dos Santos</h3>
+                                    <span class="message-latest">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                                    <span id="message-time">Enviada há <span id="timeCount"></span> minutos</span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+            </section>
+                
+
+        </div>
+    
+            <main class="all-contant-chat-message-area">
+                    <header>
+                        <div class="indetify-card-control">
+                            <img src="assets/img/image1.jfif" alt="" class="image-indentify">
+                            <div class="space-name">
+                                <h3>José Mário Dos Santos</h3>
+                                <small>Work/functio/other</small>
+                            </div>
+                        </div>
+                        <div class="area-extra">
+                            <button>
+                                <i class="fa-solid fa-phone"></i>
+                            </button>
+
+                            <button>
+                                <i class="fa-solid fa-video"></i>
+                            </button>
+                        </div>
+                    </header>
+
+                    <div class="content-chat-inbox">
+                            <div class="send-now">
+                                <div class="sn-Stage" id="msg">
+                                    <span id="msgItem">Olá! Tudo Bem? :)</span>
+                                    <div class="msgOptions">
+                                        <span id="time">há minutos</span>
+                                        <span id="read-unread"><i class="fa-solid fa-check-double"></i></span>
+                                    </div>
+                                    <div class="msgOptions-h-msg-m">
+                                        <button class="btn-md" id="btn-mark" onclick="addText2(mtext, mark[0])"><i class="fa-regular fa-bookmark"></i></button>
+                                        <button class="btn-md" id="btn-arquive" onclick="addText(theText, arq[0])"><i class="fa-regular fa-note-sticky"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="recive-now" id="recive-now">
+                                <div class="rn-Stage" id="msg">
+                                        <span id="msgItem">digite alguma coisa</span>
+                                        <div class="msgOptions" id="msgOptions-recive">
+                                            <span id="time">há minutos</span>
+                                            <span id="read-unread"><i class="fa-solid fa-check-double"></i></span>
+                                        </div>
+                                        <div class="msgOptions-h-msg-m" id="msOptions-H">
+                                            <button class="btn-md" id="btn-mark" onclick="addText2(mtext2, mark[1])"><i class="fa-regular fa-bookmark"></i></button>
+                                            <button class="btn-md" id="btn-arquive" onclick="addText(theText2, arq[1])"><i class="fa-regular fa-note-sticky"></i></button>
+                                        </div>
+                                </div>
+
+                                <!-- show under -->
+                            </div>
+                    </div>
+
+                    <div class="footer-content">
+                        <div class="input">
+                            <div class="md-inpt-text">
+                                <input type="text" name="message" id="msg-inpt" class="md-inpt" placeholder="Enviar mensagem..."
+                                maxlength="30" minlength="7">
+                            </div>
+                            <div class="md-send-text">
+                                <button class="mini-options" id="mini-OP">
+                                    <i class="fa-solid fa-paperclip"></i>
+                                </button>
+                                <div class="extra-options-sm" id="extraSection">
+                                    <label for="for-images">
+                                        <i class="fa-solid fa-image"></i> &nbsp; Imagens
+                                    </label>
+                                    <input type="file" name="img" id="for-images" accept="image/*" onchange="ImageVlue()">
+                                    <div class="files-img">
+                                        <span class="the-file"></span>
+                                    </div>    
+                                    <label for="for-assets">
+                                        <i class="fa-solid fa-file"></i>  &nbsp; Ficheiros
+                                    </label>
+                                    <input type="file" name="assets" id="for-assets" onchange="ficheiroVlue()">
+                                </div>
+                                
+                                <button class="md-send-btn" id="msg-btn">
+                                    <i class="fa-sharp fa-solid fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+            </main>
+
+            
+            
+
+        </div> 
+        <div class="Pre-enter" id="chat-step-1">
+            <div class="pre-content">
+                <div class="pre-image">
+                    <div>
+                        <img src="assets/img/pre-image.svg" alt="imagem de chat" class="the-pre-image">
+                    </div>
+                </div>
+                <div class="pre-text">
+                    <h1>Bem-Vindo Ao LiveChat</h1>
+                    <p>Converse e se Divirta em tempo real com o LiveChat <br> Marque ou Arquive Conversas, Fale com mais pessoas ao mesmo tempo.</p>
+                </div>
+                <div class="pre-btn">
+                    <button id="star-chat">Começar</button>
+                </div>
+            </div>
+        </div>
+ </body>
+<!-- Scripts da página -->
+ <script src="assets/js/scripts.js"></script>
+ <script src="assets/js/funcinal.js"></script>
+ <script src="assets/js/preload.js"></script>
+</html>

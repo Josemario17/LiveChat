@@ -1,0 +1,88 @@
+body{
+    background-color: gray;
+}
+
+#chat-step-2 *{
+    animation-name: abrir;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transition: ease-in-out;
+}
+
+@keyframes abrir {
+    from{
+        opacity: 5%;
+    }
+
+    to{
+        opacity: 35%;
+    }
+}
+.Pre-enter{
+    z-index: 4;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 25px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    box-shadow: -10px -5px 50px 0 rgb(0 0 0 / 27%);
+    overflow: hidden;
+}
+
+.pre-content{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.pre-content div{
+    width: 100%;
+}
+
+.the-pre-image{
+    display: block;
+    margin: 0 auto;
+    width: 280px;
+}
+
+.pre-text{
+    display: block;
+    text-align: center;
+}
+
+.pre-text h1{
+    color: #a17fa1;
+    font-size: xx-large;
+}
+
+.pre-text p{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.pre-btn button{
+    display: block;
+    width: 50%;
+    height: 52px;
+    margin: 0 auto;
+    border-radius: 22px;
+    border: 2px solid #a17fa1;
+    font-size: 2.2ch;
+    transition: .2s ease-in-out;
+    color: #7c637c;
+}
+
+.pre-btn button:hover{
+    background-color: #a17fa1;
+    color: aliceblue;
+    border: 0;
+}
+

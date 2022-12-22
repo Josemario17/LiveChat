@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiveChat - RealTime / Perfis</title>
+    <link rel="stylesheet" href="assets/icons/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="" id="super-effects">
+    <!-- estilos para gerir o conteudo em medias menores -->
+    <link rel="stylesheet" media="(max-width:1000px)" href="assets/css/responsividade.css">
+
+    <!-- estilos para gerir o conteudo em medias menores -->
+    <link rel="stylesheet" media="(max-height:700px)" href="assets/css/responsividade-h.css">
+    
+    <!-- para efeitos do app -->
+    <link rel="stylesheet" href="assets/css/effects.css">
+</head>
+<body id="root">
+    <header>
+        <nav class="xl-nav">
+            <div class="high-text">
+                <h1><i class="fa-solid fa-comment"></i> LiveChat - Offline</h1>
+            </div>
+
+            <div class="options-area">
+                <button class="btn-options" id="btn"><i class="fa-solid fa-bars"></i></button>
+                <div class="background-otions" id="background-otions">
+                    <div class="close-tab">
+                        <button id="btn-to-close"><i class="f-close-icon"></i></button>
+                    </div>
+                    <div class="first-content">
+                        <a href="https://github.com/Josemario17/LiveChat" class="link-right"><i class="fa-solid fa-circle-dollar-to-slot"></i>Dar contributo</a>
+                        <a href="asks.html" class="link-right"><i class="fa-solid fa-question"></i> Perguntas Frequentes</a>
+                    </div>
+
+                    <div class="social-link-gr">
+                        <a href="https://www.facebook.com/josy.dossantos.1004/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/callme_jsyy/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/jos%C3%A9-m%C3%A1rio-dos-santos-625809228/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+
+                    <div class="latest-content">
+                        <span><small>LiveChat copyrigth - 2022 / All rights reserved</small></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-in-main">
+        <div class="cover-photo" id="coverPhoto">
+           <div>
+                <label for="f-cover">Editar Foto de Capa</label>
+                <input type="file" name="f-cover" id="f-cover" accept=".jpg, .jpge, .png, .webp" onchange="CoverNew()">
+                <span>Dimensão 300px / 300px</span>
+           </div>
+        </div>
+
+        <div class="container-float">
+            <aside>
+                <!-- 1 -->
+                <div class="profile-card" id="card">
+                    <div class="change">
+                        <label for="f-profile"><i class="fa-solid fa-pencil"></i></label>
+                        <input type="file" name="f-profile" id="f-profile" accept=".jpg, .jpge, .png, .webp" onchange="change()">
+                    </div>
+                    <div class="pht-area">
+                        <img src="assets/img/image1.jfif" alt="profile-photo" id="profile-photo">
+                    </div>
+    
+                    <section>
+                        <h3>Josy Dos Santos</h3>
+                        <div class="follow-btns">
+                            <button> <i class="fa-solid fa-users"></i> Seguidores</button>
+                            <button> <i class="fa-solid fa-user-plus"></i> Seguindo</button>
+                        </div>
+                        <div class="fs-content">
+                            <span>Work / Functions</span>
+                            <span> <i class="fa-solid fa-location-dot"></i>&nbsp; Viana - Luanda, Angola</span>
+                        </div>
+                    </section>
+                </div>
+                
+                <!-- 2 -->
+                <section class="my-ctt" id="card">
+                    <h2>Meus Contatos</h2>
+                    <span>Seus Contatos Irão Aparecer aqui</span>
+                </section>
+            </aside>
+                
+            <aside>
+                <!-- 1 -->
+                <section id="card">
+                    <h2>Sobre mim:</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam illo quisquam odit molestiae voluptatum repellat, obcaecati ex aperiam dolor eligendi reprehenderit, eos quasi et hic repudiandae sunt! Repudiandae, facere alias?</p>
+                </section>
+                
+                <!-- 2 -->
+                <section id="card">
+                    <h2>Publicações</h2>
+                    <span>Adicione Publicações Aqui</span>
+                    <div class="add-sect">
+                        <button onclick="pub()"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </section>
+            </aside>
+        </div>
+
+        <div class="pop-Up-to-post" id="popUpPost">
+            <div class="close">
+                <span>Nova Publicação</span>
+                <button id="QuitClose" onclick="closePOPUP()"><i class="f-close-icon"></i></button>
+            </div>
+            <div class="items-top" id="items-top">
+                <button id="addTIme" onclick="aplydata()"><i class="fa-solid fa-calendar"></i> &nbsp; Add Time</button>
+            </div>
+
+            <div class="personal">
+                <div class="imagenPersonal">
+                    <img src="assets/img/image1.jfif" alt="profile-photo" id="profile-photo">
+                </div>
+                <div class="identify-area-p">
+                    <div class="name">
+                        <span id="userName">Josy dos Santos</span>
+                    </div>
+                    <div class="privacity">
+                        <i class="fa-solid fa-earth-americas" id="icon-priv-ch"></i>
+                        <select name="selec-t" id="select" title="Privacidade">
+                            <option value="0">Todos</option>
+                            <option value="1">Amigos</option>
+                            <option value="2">Apenas para mim</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Text-post" id="to-after-hide">
+                <textarea name="txtArea" id="textPost" cols="30" rows="10" maxlength="570" minlength="1" placeholder="Digite Seu Texto aqui."  required></textarea>
+                <button type="submit" class="btnPost" id="btnPost"  onclick="verifyContents()">Criar Publicação</button>
+                <img src="assets/img/loading.gif" alt="" id="loader">
+            </div>
+
+        </div>
+    </main>
+
+    <div class="posts-sect" id="sectionPost">
+        <!-- more above -->
+    </div>
+
+
+    <input type="checkbox" id="hidden-check-inpt">
+    <label for="hidden-check-inpt">
+        <div class="menu-floating-md-tp">
+            <span class="icone-sp-eff-sp"></span>
+        </div>
+    </label>
+    <div class="op-md-w-h" id="min-options-chat">
+            <a href="index.html" class="Btn-floating"><i class="fa-solid fa-house"></i></a>
+            <a href="" class="Btn-floating"><i class="fa-solid fa-user-group"></i></a>
+            <a href="chatRealTime.html" class="Btn-floating"><i class="fa-solid fa-envelope-open"></i></a>
+            <a href="https://github.com/Josemario17/" class="Btn-floating"><i class="fa-solid fa-share-from-square"></i></a>
+            <a href="profiles.html" class="Btn-floating"><i><i class="fa-solid fa-circle-user"></i></i></a>
+    </div>
+    <div id="content-end">
+        <div class="callTOp">
+            <button id="btn-to-up"><i class="fa-sharp fa-solid fa-arrow-up"></i></button>
+        </div>
+        <div class="end-tip">
+            <h2> <i class="fa-solid fa-comment"></i> LiveChat</h2>
+            <p>
+                2022 - Todos os Direitos Reservados
+            </p>
+        </div>
+    </div>
+</body>
+
+<!-- scripts aqui -->
+<script src="assets/js/scripts.js"></script>
+<script src="assets/js/funcionalPost.js"></script>
+</html>
